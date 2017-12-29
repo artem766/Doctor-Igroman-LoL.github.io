@@ -28,7 +28,7 @@ function canvasApp () {
   function drawScreen () {
     ctx.fillStyle = 'rgba(0,0,0,.05)';
 		ctx.fillRect(0, 0, w, h);
-		ctx.fillStyle = '#0f0'; // #0f0 #0000f4
+		ctx.fillStyle = '#ff5200'; // #0f0 #0000f4
 		ctx.font = '16px Jokerman';
 		yPositions.map(function(y, index){
 		  text = String.fromCharCode(1e2 + Math.random() * 33);

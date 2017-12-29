@@ -32,25 +32,68 @@ for (var i = 0; i < elementsWithDependent.length; i++) {
 	
 	var element = elementsWithDependent[i];
 	element.addEventListener('click', function () {
+
+		var content = document.getElementsByClassName('Content');
+		//~~~o Перечесляем все див с классом "content" и очищаем фон
+		//~~~o После добавляем цвет выбраного фона
+
+		for (var g = 0; g < content.length; g++) {
+			content[g].style.background = 'none';
+			this.style.background = 'yellow';
+		};
+
 		//Скрываем все dependent-item (потом мы один покажем, но пока что скроем все)
 		var dependentItems = document.getElementsByClassName('dependent-item');
 		for (var j = 0; j < dependentItems.length; j++) {
 			dependentItems[j].style.display = 'none';
 		}
 
+
 		//Получаем data-showelement (в нём хранится ID того, что показать)
 		var dependentElementId = this.getAttribute('data-showelement');
 		// Попробуем найти этот элемент, если найдётся — покажем
+
 		var dependentElement = document.getElementById(dependentElementId);
 		if (dependentElement) {
-			dependentElement.style.display = '';
+			dependentElement.style.display = 'block';
+
 		}
 
 	});
 
-
-
 };
+
+// document.getElementById('checkBox').onchange = function () {
+
+// 	var imgSize = document.getElementsByTagName('img');
+// 	console.log(changeCheckBox);
+// 	var changeCheckBox;
+// 	if (changeCheckBox === true) {
+// 		changeCheckBox = false;
+// 	} else {
+// 		changeCheckBox = true;
+// 	};
+// 	console.log(changeCheckBox);	
+
+// 	for (var j = 0; j < imgSize.length; j++) {
+// 		// console.log(imgSize[j].max-width);
+// 		// if (imgSize[j].width < 1) {
+// 		// 	console.log('No');
+// 		// }
+
+		
+
+
+// 		var center = document.getElementById("center");
+// 		center.style.overflow = "visible";
+// 		// imgSize[j].style.max-width = 100 + "%";
+// 		// imgSize[j].style.max-height = "100%";		
+// 		imgSize[j].style.width = "auto\9";
+// 		imgSize[j].style.height = "auto";
+
+// 	};
+
+// };
 
 // document.getElementById('save').onclick = function () {
 // 	var dependentImages = document.getElementsByTagName('img');
@@ -64,4 +107,4 @@ for (var i = 0; i < elementsWithDependent.length; i++) {
 // 		//dependentImages[j].style.display = 'none';
 // 	}
 
-// };
+// // };
