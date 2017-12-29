@@ -3,21 +3,24 @@ body {
   height: 100%;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
+}
+
+.center {
+	position: absolute;	
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 h1 {
 	z-index: 10;
-	position: absolute;
-	top: 40%;
-	left: 40%;
 	font-family: "Jokerman";
-
 	background-color: black;
-	color: #0f0;	/* 0000f4 #1408ff*/
+	color: #ff5200;	/* 0000f4 #1408ff #0f0 #ff5200*/
 	font-size: 35px;
 	padding: 10px;
-	border: 6px outset #0f0;
+	border: 6px outset #ff5200;
 	/*border-style: outset;*/
 }
 
@@ -34,11 +37,11 @@ h1 {
 // }
 
 a:visited {
-	color: #0f0;
+	color: #ff5200;
 }
 
 a:link {
-	color: green;
+	color: orange;
 }
 
 a {
