@@ -7,6 +7,6 @@ for (var i=0; i<checkDiv.length; i++) {
 }
 
 function f1() {
-	//console.log(this);
+	console.log(this);
 	//alert('Hello');
 }

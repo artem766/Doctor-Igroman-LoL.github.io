@@ -55,7 +55,7 @@ for (var i = 0; i < elementsWithDependent.length; i++) {
 
 		var dependentElement = document.getElementById(dependentElementId);
 		if (dependentElement) {
-			dependentElement.style.display = 'block';
+			dependentElement.style.display = '';
 
 		}
 
@@ -63,37 +63,37 @@ for (var i = 0; i < elementsWithDependent.length; i++) {
 
 };
 
-// document.getElementById('checkBox').onchange = function () {
+document.getElementById('checkBox').onchange = function () {
 
-// 	var imgSize = document.getElementsByTagName('img');
-// 	console.log(changeCheckBox);
-// 	var changeCheckBox;
-// 	if (changeCheckBox === true) {
-// 		changeCheckBox = false;
-// 	} else {
-// 		changeCheckBox = true;
-// 	};
-// 	console.log(changeCheckBox);	
+	var imgSize = document.getElementsByTagName('img');
+	// console.log(changeCheckBox);
+	// var changeCheckBox;
+	// if (changeCheckBox === true) {
+	// 	changeCheckBox = false;
+	// } else {
+	// 	changeCheckBox = true;
+	// };
+	// console.log(changeCheckBox);	
 
-// 	for (var j = 0; j < imgSize.length; j++) {
-// 		// console.log(imgSize[j].max-width);
-// 		// if (imgSize[j].width < 1) {
-// 		// 	console.log('No');
-// 		// }
+	for (var j = 0; j < imgSize.length; j++) {
+		console.log(imgSize[j]);
+		// if (imgSize[j].width < 1) {
+		// 	console.log('No');
+		// }
 
 		
 
 
-// 		var center = document.getElementById("center");
-// 		center.style.overflow = "visible";
-// 		// imgSize[j].style.max-width = 100 + "%";
-// 		// imgSize[j].style.max-height = "100%";		
-// 		imgSize[j].style.width = "auto\9";
-// 		imgSize[j].style.height = "auto";
+		var center = document.getElementById("center");
+		// center.style.overflow = "visible";
+		// imgSize[j].style.max-width = 100 + "%";
+		// imgSize[j].style.max-height = "100%";		
+		imgSize[j].style.width = 'initial';  //auto\9
+		imgSize[j].style.height = 'initial';  //auto
+		// imgSize[j].style.backgroundSize = "auto auto";
+	};
 
-// 	};
-
-// };
+};
 
 // document.getElementById('save').onclick = function () {
 // 	var dependentImages = document.getElementsByTagName('img');
