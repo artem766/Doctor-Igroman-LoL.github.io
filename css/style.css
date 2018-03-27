@@ -201,8 +201,8 @@ section {
 }
 
 p {
-    height: 67px;
-    width: 100%;
+    height: auto;
+    width: auto;
     margin: 0%;
     float: left;
     overflow: auto; 
