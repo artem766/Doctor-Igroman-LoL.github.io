@@ -40,7 +40,7 @@ for (var i = 0; i < elementsWithDependent.length; i++) {
 		for (var g = 0; g < content.length; g++) {
 			content[g].style.background = 'none';
 			this.style.background = 'yellow';
-		};
+		}
 
 		//Скрываем все dependent-item (потом мы один покажем, но пока что скроем все)
 		var dependentItems = document.getElementsByClassName('dependent-item');
@@ -61,7 +61,7 @@ for (var i = 0; i < elementsWithDependent.length; i++) {
 
 	});
 
-};
+}
 
 document.getElementById('checkBox').onchange = function () {
 
@@ -91,7 +91,7 @@ document.getElementById('checkBox').onchange = function () {
 		imgSize[j].style.width = 'initial';  //auto\9
 		imgSize[j].style.height = 'initial';  //auto
 		// imgSize[j].style.backgroundSize = "auto auto";
-	};
+	}
 
 };
 
